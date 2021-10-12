@@ -14,6 +14,7 @@
 		11680ECC2715BAFA00BEDA94 /* Mad_Lips_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11680ECA2715BAFA00BEDA94 /* Mad_Lips_App.xcdatamodeld */; };
 		11680ECE2715BAFD00BEDA94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11680ECD2715BAFD00BEDA94 /* Assets.xcassets */; };
 		11680ED12715BAFD00BEDA94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11680ECF2715BAFD00BEDA94 /* LaunchScreen.storyboard */; };
+		11680EDB2715BD1000BEDA94 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11680EDA2715BD1000BEDA94 /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		11680ECD2715BAFD00BEDA94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11680ED02715BAFD00BEDA94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11680ED22715BAFD00BEDA94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11680EDA2715BD1000BEDA94 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				11680EC32715BAFA00BEDA94 /* SceneDelegate.swift */,
 				11680EC52715BAFA00BEDA94 /* ViewController.swift */,
 				11680EC72715BAFA00BEDA94 /* Main.storyboard */,
+				11680EDA2715BD1000BEDA94 /* ViewController2.swift */,
 				11680ECD2715BAFD00BEDA94 /* Assets.xcassets */,
 				11680ECF2715BAFD00BEDA94 /* LaunchScreen.storyboard */,
 				11680ED22715BAFD00BEDA94 /* Info.plist */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11680EDB2715BD1000BEDA94 /* ViewController2.swift in Sources */,
 				11680EC62715BAFA00BEDA94 /* ViewController.swift in Sources */,
 				11680EC22715BAFA00BEDA94 /* AppDelegate.swift in Sources */,
 				11680ECC2715BAFA00BEDA94 /* Mad_Lips_App.xcdatamodeld in Sources */,
