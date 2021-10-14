@@ -15,7 +15,8 @@ class StaticVars {
     static var soccersentence = "The _adjective_ soccer player _verb_ because his _noun_ told him to"
     static var compscisentence = "_verb_ the computer lets _adjective_ _noun_ improve their skills"
     
-    
+    static var allMadlibs = [Madlibs]()
+    static var madLibCount = 0
     
 }
 
@@ -66,6 +67,11 @@ class ViewController: UIViewController {
 
     @IBAction func goToVC2Action(_ sender: UIButton) {
         
+        var vc1noun = vc1TextFieldOutlet.text!
+        var vc1adjective = vc1TextFieldAdjectiveOutlet.text!
+        var vc1verb = vc1TextFieldVerbOutlet.text!
+        
+        
         if vc1TextFieldOutlet.text == "" || vc1TextFieldAdjectiveOutlet.text == "" || vc1TextFieldVerbOutlet.text == ""{
             
             let alert = UIAlertController(title: "Textfield empty", message: "Put something in the text fields or else...", preferredStyle: .alert)
@@ -79,10 +85,56 @@ class ViewController: UIViewController {
             
         }
         else{
+            
+        let newMadlib = Madlibs(n: vc1noun, a: vc1adjective, v: vc1verb, t: theme)
+            StaticVars.allMadlibs.append(newMadlib)
+            StaticVars.madLibCount += 1
+            
         performSegue(withIdentifier: "jamal", sender: nil)
         }
+        
+        
     }
 
+    @IBAction func segmentedControllerAction(_ sender: UISegmentedControl) {
+        
+        var selected = sender.selectedSegmentIndex
+        
+        switch selected {
+        case 0:
+            randomNum = Int.random(in: 0...2)
+            theme = StaticVars.themes[randomNum]
+            
+            themeLabel.text = "Theme: \(theme)"
+            
+            if theme == "food" {
+                textViewOutlet.text = StaticVars.foodsentence
+            }
+            else if theme == "soccer" {
+                textViewOutlet.text = StaticVars.soccersentence
+            }
+            else{
+                textViewOutlet.text = StaticVars.compscisentence
+            }
+        case 1:
+            theme = StaticVars.themes[0]
+            themeLabel.text = "Theme: \(theme)"
+            textViewOutlet.text = StaticVars.foodsentence
+        case 2:
+            theme = StaticVars.themes[1]
+            themeLabel.text = "Theme: \(theme)"
+            textViewOutlet.text = StaticVars.soccersentence
+        case 3:
+            theme = StaticVars.themes[2]
+            themeLabel.text = "Theme: \(theme)"
+            textViewOutlet.text = StaticVars.compscisentence
+            
+        default:
+            themeLabel.text = "error"
+            textViewOutlet.text = "error"
+        }
+        
+    }
     
     
     

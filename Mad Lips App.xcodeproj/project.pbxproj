@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1153464B27185FA000105B35 /* madlibs class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1153464A27185FA000105B35 /* madlibs class.swift */; };
+		1153464F2718659800105B35 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1153464E2718659800105B35 /* ViewController3.swift */; };
 		11680EC22715BAFA00BEDA94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11680EC12715BAFA00BEDA94 /* AppDelegate.swift */; };
 		11680EC42715BAFA00BEDA94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11680EC32715BAFA00BEDA94 /* SceneDelegate.swift */; };
 		11680EC62715BAFA00BEDA94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11680EC52715BAFA00BEDA94 /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1153464A27185FA000105B35 /* madlibs class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "madlibs class.swift"; sourceTree = "<group>"; };
+		1153464E2718659800105B35 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		11680EBE2715BAFA00BEDA94 /* Mad Lips App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mad Lips App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11680EC12715BAFA00BEDA94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11680EC32715BAFA00BEDA94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,7 +67,9 @@
 				11680EC12715BAFA00BEDA94 /* AppDelegate.swift */,
 				11680EC32715BAFA00BEDA94 /* SceneDelegate.swift */,
 				11680EC52715BAFA00BEDA94 /* ViewController.swift */,
+				1153464A27185FA000105B35 /* madlibs class.swift */,
 				11680EC72715BAFA00BEDA94 /* Main.storyboard */,
+				1153464E2718659800105B35 /* ViewController3.swift */,
 				11680EDA2715BD1000BEDA94 /* ViewController2.swift */,
 				11680ECD2715BAFD00BEDA94 /* Assets.xcassets */,
 				11680ECF2715BAFD00BEDA94 /* LaunchScreen.storyboard */,
@@ -146,8 +152,10 @@
 			files = (
 				11680EDB2715BD1000BEDA94 /* ViewController2.swift in Sources */,
 				11680EC62715BAFA00BEDA94 /* ViewController.swift in Sources */,
+				1153464B27185FA000105B35 /* madlibs class.swift in Sources */,
 				11680EC22715BAFA00BEDA94 /* AppDelegate.swift in Sources */,
 				11680ECC2715BAFA00BEDA94 /* Mad_Lips_App.xcdatamodeld in Sources */,
+				1153464F2718659800105B35 /* ViewController3.swift in Sources */,
 				11680EC42715BAFA00BEDA94 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
