@@ -67,16 +67,13 @@ class ViewController3: UIViewController, UITextFieldDelegate {
             
             
     }
-    
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-
-        //textField code
-
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         numOfMadlibTextFieldOutlet.resignFirstResponder()  //if desired
         performAction()
         return true
         
     }
+    
 
     @IBAction func madLibAction(_ sender: UIButton) {
         
@@ -99,7 +96,7 @@ class ViewController3: UIViewController, UITextFieldDelegate {
             else{
                 
                 
-              let hey = Int(numOfMadlibTextFieldOutlet.text!) ?? 0
+              let hey = Int(numOfMadlibTextFieldOutlet.text!)!
                 
                 if hey <= StaticVars.madLibCount && hey > 0 {
                     

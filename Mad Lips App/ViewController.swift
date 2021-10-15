@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var vc1TextFieldAdjectiveOutlet: UITextField!
     @IBOutlet weak var vc1TextFieldVerbOutlet: UITextField!
     @IBOutlet weak var themeLabel: UILabel!
-    @IBOutlet weak var textViewOutlet: UITextView!
+  
     
     
     var randomNum = 0
@@ -41,13 +41,13 @@ class ViewController: UIViewController {
         themeLabel.text = "Theme: \(theme)"
         
         if theme == "food" {
-            textViewOutlet.text = StaticVars.foodsentence
+           
         }
         else if theme == "soccer" {
-            textViewOutlet.text = StaticVars.soccersentence
+            
         }
         else{
-            textViewOutlet.text = StaticVars.compscisentence
+          
         }
         
     }
@@ -108,30 +108,30 @@ class ViewController: UIViewController {
             themeLabel.text = "Theme: \(theme)"
             
             if theme == "food" {
-                textViewOutlet.text = StaticVars.foodsentence
+                
             }
             else if theme == "soccer" {
-                textViewOutlet.text = StaticVars.soccersentence
+               
             }
             else{
-                textViewOutlet.text = StaticVars.compscisentence
+                
             }
         case 1:
             theme = StaticVars.themes[0]
             themeLabel.text = "Theme: \(theme)"
-            textViewOutlet.text = StaticVars.foodsentence
+            
         case 2:
             theme = StaticVars.themes[1]
             themeLabel.text = "Theme: \(theme)"
-            textViewOutlet.text = StaticVars.soccersentence
+          
         case 3:
             theme = StaticVars.themes[2]
             themeLabel.text = "Theme: \(theme)"
-            textViewOutlet.text = StaticVars.compscisentence
+           
             
         default:
             themeLabel.text = "error"
-            textViewOutlet.text = "error"
+            
         }
         
     }
